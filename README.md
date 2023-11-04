@@ -16,4 +16,15 @@ You can install the necessary packages using `pip`:
 !pip install cohere
 !pip install tiktoken
 !pip install llmx==0.0.15a0
+```
 
+### 2. Export Your OpenAI API Key
+Make sure to set your OpenAI API key as an environment variable:
+
+```bash
+import os
+os.environ["OPENAI_API_KEY"] = "your-api-key"
+```
+
+### 3. Download Sample PDF Document (Optional)
+The example provided in the code assumes you have a PDF document named "book.pdf" in the project directory. If you want to use a different document, make sure to change the PyPDFLoader initialization accordingly.
